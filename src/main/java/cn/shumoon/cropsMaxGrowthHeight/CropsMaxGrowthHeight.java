@@ -14,10 +14,11 @@ public class CropsMaxGrowthHeight implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Initializing {}", MOD_ID);
         config = Configuration.load();
-        LOGGER.info("Sugar cane maximum growth height is {}", config.maxHeight);
+        LOGGER.info("Sugar cane maximum growth height is {}", config.sugarCaneMaxHeight);
+        LOGGER.info("Bamboo maximum growth height is {}", config.bambooMaxHeight);
     }
 
-    public static Configuration getConfig() {
+    public static Configuration getConfiguration() {
         return config;
     }
 

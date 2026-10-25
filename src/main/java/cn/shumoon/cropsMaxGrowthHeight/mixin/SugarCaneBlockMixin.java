@@ -25,8 +25,8 @@ public class SugarCaneBlockMixin {
     }
 
     private static int getMaxHeight() {
-        Configuration config = CropsMaxGrowthHeight.getConfig();
-        return config != null ? config.maxHeight : Configuration.DEFAULT_MAX_HEIGHT;
+        Configuration config = CropsMaxGrowthHeight.getConfiguration();
+        return config != null ? config.sugarCaneMaxHeight : Configuration.DEFAULT_MAX_HEIGHT;
     }
 
     /**
